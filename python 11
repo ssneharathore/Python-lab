@@ -1,0 +1,17 @@
+Q11. Python program to read a character by character from a file
+def read_file_character_by_character(filename):
+    try:
+        with open(filename, 'r') as file:
+            while True:
+                char = file.read(1)
+                if not char:
+                    break
+                print(char)
+    except FileNotFoundError:
+        print(f"File '{filename}' not found.")
+
+# Test the function
+file_name = input("Enter the file name: ")
+read_file_character_by_character(file_name)
+
+OUTPUT: This is the content of the file
