@@ -1,0 +1,21 @@
+Q14. Python program to check if a string is palindrome or not
+def is_palindrome(string):
+    # Convert the string to lowercase and remove whitespace
+    string = string.lower().replace(" ", "")
+
+    # Check if the string is equal to its reverse
+    if string == string[::-1]:
+        return True
+    else:
+        return False
+
+# Test the function
+input_string = input("Enter a string: ")
+
+if is_palindrome(input_string):
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
+    
+OUTPUT: Enter a string: MADAM
+The string is a palindrome.
