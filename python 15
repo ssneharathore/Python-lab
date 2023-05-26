@@ -1,0 +1,11 @@
+Q15. Program to print ASCII value of a character
+def print_ascii_value(character):
+    ascii_value = ord(character)
+    print(f"The ASCII value of '{character}' is: {ascii_value}")
+
+# Test the function
+input_character = input("Enter a character: ")
+print_ascii_value(input_character)
+
+OUTPUT: Enter a character: B
+The ASCII value of 'B' is: 66
